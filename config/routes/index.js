@@ -2,7 +2,9 @@ const routes = require("next-routes");
 
 // Name   Page      Pattern
 module.exports = routes() // ----   ----      -----
-  .add({ name: "home", pattern: "/", page: "/Home" });
+  .add({ name: "home", pattern: "/", page: "/Home" })
+  .add({ name: "readQuran", pattern: "/read-quran", page: "/Read" })
+  .add({ name: "about", pattern: "/about-quranku", page: "/About" })
 // .add('blog', '/blog/:slug')                         // blog   blog      /blog/:slug
 // .add('user', '/user/:id', 'profile')                // user   profile   /user/:id
 // .add('/:noname/:lang(en|es)/:wow+', 'complex')      // (none) complex   /:noname/:lang(en|es)/:wow+

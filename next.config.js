@@ -9,7 +9,8 @@ const aliases = {
   Utils: path.resolve(__dirname, "utils"),
   Layout: path.resolve(__dirname, "containers/layouts"),
   Static: path.resolve(__dirname, "static"),
-  Actions: path.resolve(__dirname, "redux/actions"),
+  Api: path.resolve(__dirname, "config/api"),
+  Actions: path.resolve(__dirname, "context/actions"),
   Routes: path.resolve(__dirname, "config/routes")
 };
 

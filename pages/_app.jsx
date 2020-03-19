@@ -1,8 +1,10 @@
 import App from "next/app";
 import Head from "next/head";
 import React from "react";
+import './global.css';
+import { MainLayout } from 'Containers';
 
-export default class MyApp extends App {
+class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {};
 
@@ -21,8 +23,12 @@ export default class MyApp extends App {
         <Head>
           <title>Qur'anku App</title>
         </Head>
-        <Component {...pageProps} />
+        <MainLayout>
+          <Component {...pageProps} />
+        </MainLayout>
       </>
     );
   }
 }
+
+export default MyApp;

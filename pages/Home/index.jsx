@@ -1,11 +1,13 @@
 import React from "react";
+import Greetings from './greetings';
 
 const Home = () => {
+
   return (
     <div>
-      <h1>WELCOME QURANKU</h1>
+      <Greetings />
     </div>
   );
 };
 
-export default Home;
+export default Home

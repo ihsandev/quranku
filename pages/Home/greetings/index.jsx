@@ -1,5 +1,12 @@
 import React from 'react';
-import { Title } from './styled';
+import styled from 'styled-components';
+
+const Title = styled.h1`
+  text-align: center;
+  span {
+    font-weight: bolder;
+  }
+`
 
 const Greetings = () => (
   <div>

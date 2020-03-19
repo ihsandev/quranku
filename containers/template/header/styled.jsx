@@ -1,15 +1,20 @@
+import React from 'react';
 import styled from 'styled-components'
 import { Color } from 'Utils'
 
-export const Menu = styled.ul`
+const Menu = styled.ul`
   display: flex;
   background-color: ${Color.light};
   justify-content: center;
   padding: 10px;
   border-bottom: 1.2px solid rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 `
 
-export const MenuItem = styled.li`
+const MenuItem = styled.li`
   list-style: none;
   margin-right: 2rem;
   &:nth-last-of-type(){
@@ -50,3 +55,5 @@ export const MenuItem = styled.li`
     border-radius: 3px;
   }
 `
+
+export { Menu, MenuItem }
